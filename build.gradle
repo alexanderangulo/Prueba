@@ -41,4 +41,6 @@ test {
 	reports.junitXml.destination = file ("jacoco/test-results")
 }
 jacocoTestReport.dependsOn(test)
-
+plugins {
+  id "org.sonarqube" version "2.6"
+}
